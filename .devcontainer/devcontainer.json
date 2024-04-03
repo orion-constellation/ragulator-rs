@@ -1,0 +1,40 @@
+{
+    "name": "Ragulator",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".",
+      "args": {
+        // Add build arguments if any
+      }
+    },
+    "runArgs": [
+      // Add runtime arguments if needed, such as "--network=host"
+    ],
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash",
+      "[rust]": {
+        "editor.formatOnSave": true,
+        "editor.codeLens": {
+          "references": true,
+          "referencesAllFunctions": true
+        }
+      },
+      "files.eol": "\n", // Ensure LF line endings
+      "rust-analyzer.checkOnSave.command": "clippy"
+    },
+    "extensions": [
+      "rust-lang.rust", 
+      "matklad.rust-analyzer", 
+      "belfz.search-crates-io", 
+      "serayuzgur.crates",
+      "swellaby.vscode-rust-test-adapter",       "EditorConfig.EditorConfig",
+      "gitlens",
+      "eamodio.gitlens"
+    ],
+    "postCreateCommand": "cargo build", // Build the project after creating the container
+    "remoteUser": "core", // Specify if using a non-root user
+    "forwardPorts": [
+      // Specify ports that need to be forwarded, e.g., for web servers
+    ]
+  }
+  
