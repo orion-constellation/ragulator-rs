@@ -1,0 +1,22 @@
+# Contributing to Ragulator
+Thank you for considering contributing to Ragulator! Your contributions are greatly appreciated and help improve the project for everyone.
+
+## How to Contribute?
+
+Fork the repository and clone it to your local machine.
+Create a new branch for your contributions: git checkout -b feature/<feature-name>
+Make your changes and ensure that they adhere to the project's coding style and guidelines.
+Write tests to cover your changes whenever possible.
+Run the tests locally to ensure that they pass: pytest
+Commit your changes: git commit -am "Add new feature"
+Push your changes to your fork: git push origin feature/<feature-name>
+Submit a pull request to the main repository.
+Reporting Issues
+If you encounter any bugs, issues, or have suggestions for improvements, please open an issue on the GitHub repository. Provide as much detail as possible, including steps to reproduce the issue and any relevant error messages.
+
+## Code Style
+Follow PEP 8 guidelines for Python code.
+Use clear and descriptive variable and function names.
+Include docstrings to document the purpose and usage of functions and classes.
+Licensing
+By contributing to the Ragulator project, you agree to license your contributions under the project's open-source license. Ensure that any code, documentation, or other content you contribute is compatible with the project's licensing terms.
